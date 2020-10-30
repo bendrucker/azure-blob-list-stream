@@ -13,8 +13,8 @@ $ npm install --save azure-blob-list-stream
 ## Usage
 
 ```js
-var ListStream = require('azure-blob-list-stream')
-var blob = azure.createBlobService(process.env.AZURE_STORAGE_CONNECTION_STRING)
+const ListStream = require('azure-blob-list-stream')
+const blob = azure.createBlobService(process.env.AZURE_STORAGE_CONNECTION_STRING)
 
 ListStream(blob, 'my-container')
   .on('data', (blob) => console.log(blob.name))
