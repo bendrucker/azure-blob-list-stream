@@ -30,6 +30,6 @@
     "test.js"
   ],
   "engines": {
-    "node": ">= 8"
+    "node": ">= 12"
   }
 }
