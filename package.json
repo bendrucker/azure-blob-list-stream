@@ -21,7 +21,7 @@
   "devDependencies": {
     "azure-storage": "~2.10.3",
     "concat-stream": "~2.0.0",
-    "nock": "~13.0.4",
+    "nock": "~13.1.0",
     "standard": "^16.0.0",
     "tape": "^5.0.1"
   },
