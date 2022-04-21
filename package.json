@@ -22,7 +22,7 @@
     "azure-storage": "~2.10.3",
     "concat-stream": "~2.0.0",
     "nock": "~13.2.0",
-    "standard": "^16.0.0",
+    "standard": "^17.0.0",
     "tape": "^5.0.1"
   },
   "files": [
