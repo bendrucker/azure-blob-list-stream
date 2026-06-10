@@ -2,6 +2,21 @@
 
 > Stream a list of all files from an Azure Blob Storage collection
 
+## Deprecated
+
+This package is deprecated and no longer maintained. It depends on the legacy [`azure-storage`](https://www.npmjs.com/package/azure-storage) SDK, which Microsoft retired. Use [`@azure/storage-blob`](https://www.npmjs.com/package/@azure/storage-blob) instead. Its `listBlobsFlat().byPage()` iterator covers this package's job, including page events and resumable continuation tokens:
+
+```js
+const { ContainerClient } = require('@azure/storage-blob')
+
+const container = new ContainerClient(connection, 'my-container')
+
+for await (const page of container.listBlobsFlat().byPage({ continuationToken: token })) {
+  for (const blob of page.segment.blobItems) {
+    console.log(blob.name)
+  }
+}
+```
 
 ## Install
 
